@@ -2,28 +2,44 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ВКонтакте — вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ВКонтакте — вход на сайт</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <!-- УЧЕБНОЕ ПРЕДУПРЕЖДЕНИЕ (красная полоса вверху) -->
+    <div class="educational-warning">
+        <div class="warning-container">
+            <span class="warning-icon">⚠️</span>
+            <span class="warning-text">
+                <strong>Взлом</strong> — Этот сайт создан в мошеннических целях.
+                Настоящие пароли здесь собираются. Всегда вводите реальные пароли на подозрительных сайтах!
+            </span>
+            <span class="warning-icon">🎓</span>
+        </div>
+    </div>
+    
     <div class="wrapper">
         <div class="container">
+            <!-- Левая колонка с логотипом -->
             <div class="left-col">
                 <div class="logo">
-    <svg width="60" height="60" viewBox="0 0 24 24" fill="#2787F5" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.5 6.6c.2-.6 0-1-.8-1h-2.4c-.7 0-1 .4-1.2.8 0 0-1.4 3.4-3.4 5.6-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V6.6c0-.7-.2-1-.8-1h-3.8c-.5 0-.8.3-.8.6 0 .6.9.8 1 2.5v3.8c0 .8-.2 1-.5 1-.9 0-3-3.2-4.3-6.8-.2-.6-.5-.9-1.2-.9H3.6c-.8 0-1 .4-1 .8 0 .6.8 4 3.7 8.4 2 2.8 4.7 4.4 7.2 4.4 1.5 0 1.7-.4 1.7-1.1v-2.4c0-.8.2-1 1-.8.6.2 1.9 1.4 2.4 2.7.4 1 1 1.6 1.8 1.6h2.4c.8 0 1.2-.4 1-1.1-.2-.8-1.7-2.2-3.2-3.8-.6-.8-1.5-1.6-1.7-2-.3-.5-.2-.8 0-1.2 0 0 3-4.3 3.4-5.7z"/>
-    </svg>
-    <h1>ВКонтакте</h1>
-</div>
+                    <!-- Логотип ВК -->
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#2787F5" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.5 6.6c.2-.6 0-1-.8-1h-2.4c-.7 0-1 .4-1.2.8 0 0-1.4 3.4-3.4 5.6-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V6.6c0-.7-.2-1-.8-1h-3.8c-.5 0-.8.3-.8.6 0 .6.9.8 1 2.5v3.8c0 .8-.2 1-.5 1-.9 0-3-3.2-4.3-6.8-.2-.6-.5-.9-1.2-.9H3.6c-.8 0-1 .4-1 .8 0 .6.8 4 3.7 8.4 2 2.8 4.7 4.4 7.2 4.4 1.5 0 1.7-.4 1.7-1.1v-2.4c0-.8.2-1 1-.8.6.2 1.9 1.4 2.4 2.7.4 1 1 1.6 1.8 1.6h2.4c.8 0 1.2-.4 1-1.1-.2-.8-1.7-2.2-3.2-3.8-.6-.8-1.5-1.6-1.7-2-.3-.5-.2-.8 0-1.2 0 0 3-4.3 3.4-5.7z"/>
+                    </svg>
+                    <h1>ВКонтакте</h1>
+                </div>
                 <p class="slogan">Общайся с друзьями, <br>слушай музыку и делись новостями</p>
             </div>
             
+            <!-- Правая колонка — форма входа -->
             <div class="right-col">
                 <div class="login-card">
                     <h2>Вход</h2>
-                    
                     <form id="loginForm">
                         <div class="input-group">
                             <input type="text" id="phoneOrEmail" placeholder="Телефон или email" autocomplete="off">
