@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВКонтакте — вход</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left-col">
+                <div class="logo">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="#0077ff">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 14c-2.67 0-5-1.36-6-3.4.02-2 4-3.1 6-3.1s5.98 1.1 6 3.1c-1 2.04-3.33 3.4-6 3.4z"/>
+                    </svg>
+                    <h1>ВКонтакте</h1>
+                </div>
+                <p class="slogan">Общайся с друзьями, <br>слушай музыку и делись новостями</p>
+            </div>
+            
+            <div class="right-col">
+                <div class="login-card">
+                    <h2>Вход</h2>
+                    
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <input type="text" id="phoneOrEmail" placeholder="Телефон или email" autocomplete="off">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="password" placeholder="Пароль">
+                        </div>
+                        <button type="submit" class="login-btn">Войти</button>
+                    </form>
+                    
+                    <div class="links">
+                        <a href="#">Забыли пароль?</a>
+                        <span class="separator">•</span>
+                        <a href="#">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
